@@ -1,13 +1,10 @@
 $().ready(() => {
-    //only executed once at startup
-    //this impacts functions when the DOM is manipulated
-        console.log("This function adds 1");
-        $("button").click(() => {
-                console.log("Number added");
-                let value = $("#nbr").val(); //pulls the value which is 5 and prints to the console
+    
+        $("#add").click(() => {
+                let value = $("#nbr").val(); 
            console.log(value); 
            value = Number(value)+1;
-           $("#nbr").val(value); //this pushes the new value into the input control
+           $("#nbr").val(value); 
             });
            
     
@@ -15,9 +12,8 @@ $().ready(() => {
 
     $().ready(() => {
         
-            console.log("This function removes 1");
-            $("-button").click(() => {
-                    console.log("Number removed");
+            
+            $("#minus").click(() => {
                     let value = $("#nbr").val(); 
                console.log(value); 
                value = Number(value)-1;
@@ -26,3 +22,4 @@ $().ready(() => {
                
         
         });
+
